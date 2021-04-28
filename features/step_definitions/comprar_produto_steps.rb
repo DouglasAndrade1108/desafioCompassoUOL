@@ -10,7 +10,6 @@ Quando('realizo uma busca pelo produto') do
 
     click_button 'submit_search'
     
-    sleep 2
 end                                                                           
 
 E('adciono o produto no carrinho') do      
@@ -18,7 +17,7 @@ E('adciono o produto no carrinho') do
     find(".product_img_link").click
     
     find('button[name="Submit"]').click
-    sleep 2
+
     find('a[title="Proceed to checkout"]').click
 end   
 E('vizualizo o sumário da compra') do      
